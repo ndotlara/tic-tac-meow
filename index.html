@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Tic Tac Meow!</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags unless you know what you are doing -->
@@ -10,16 +10,56 @@
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+      <link rel="stylesheet" href="index.scss">
     </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+    <body>
+      <header id="header" class="container brd">
+          <div id="logo">
+            <div><h2>Tic-Tac-Meow!</h2></div><small>The classic game with a feline twist.</small></div>
+          <div id="minimenu"><i class="fa fa-bars"></i></div>
+          <nav id="navbar" class="sm-screen ">
+            <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Sign Out</a></li>
+            </ul>
+          </nav>
+
+      </header>
+      <div class="container">
+        <div id="welcome">
+          <div class="welcomeHeader">Welcome!</div>
+          <p>Please <a href="">register</a> or <a href="">sign-in</a> to play.</p>
+        </div>
+      </div>
+      <section class="container">
+        <section class="gameArea">
+        <table>
+          <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+            </tr>
+          <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+            </tr>
+          <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+            </tr>
+          </table>
+          </section>
+        <aside class="sideInfo brd" class="container">side info</aside>
+      </section>
+
+      <footer id="footer" class="container-fluid">Made with &#10084; in Providence, RI.</footer>
     </body>
+
 </html>

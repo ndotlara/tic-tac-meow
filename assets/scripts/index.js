@@ -12,3 +12,15 @@ $(() => {
 
 // use require without a reference to ensure a file is bundled
 require('./example')
+// TODO fix the navbar minimenu toggle -- check CSS/HTML
+// document.getElementById('minimenu').onclick = function() {
+//   document.getElementById('navbar').style.display = (document.getElementById('navbar').style.display == 'none') ? 'block':'none';
+// }
+
+var navbar = document.getElementById('navbar');
+var btnmenu = document.getElementById('minimenu');
+btnmenu.onclick = function() {
+  console.dir(navbar);
+  console.log(navbar);
+  navbar.className = (navbar.className === '') ? 'sm-screen': '';
+}
